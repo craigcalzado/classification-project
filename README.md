@@ -48,7 +48,7 @@
 | paperless_billing | If the customer opt in for electronic statments | object |
 | monthly_charges | The monthly bill the customer recives | float |
 | total_charges | The total amount the customer has been charged | object |
-| churn | If the customer has churrned or not | object |
+| churn | If the customer has churned or not | int64 | 1=has churned, 0=has not churned |
 | gender_male | If the customer is a male or not | uint8| 0=female, 1=male |
 | payment_type_credit card(automatic) | If the customer pays with debit card | uint8 | 0=not automatic,1=automatic |
 | payment_type_electronic check | If the customer pays with electronic check | uint8 |
