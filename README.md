@@ -28,6 +28,7 @@
 - Utilization of Telco Co. dataset acquired from Codeup SQL database
 
 <h2>Data Dictionary</h2>
+
 | --- | --- | --- | --- |
 | Attribute | Definition | Data Type | Additional Info |
 | customer_id | Unique customer identification number | object |
