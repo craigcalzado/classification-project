@@ -43,6 +43,20 @@
 | online_backup | If the customer has online backup service with Telco | object |
 | device_protection | If the customer has device protection with Telco | object |
 | tech_support | If the customer has tech support with Teco | object |
-|
+| streaming_tv | If the customer has streaming tv service | object |
+| streaming_movies | If the customer has streaming movies service | object |
+| paperless_billing | If the customer opt in for electronic statments | object |
+| monthly_charges | The monthly bill the customer recives | float |
+| total_charges | The total amount the customer has been charged | object |
+| churn | If the customer has churrned or not | object |
+| gender_male | If the customer is a male or not | uint8| 0=female, 1=male |
+| payment_type_credit card(automatic) | If the customer pays with debit card | uint8 | 0=not automatic,1=automatic |
+| payment_type_electronic check | If the customer pays with electronic check | uint8 |
+| payment_type_mailed check | If the customer mails in a check | uint8 |
+| contract_type_one_year | If customer is locked into a 1 year contract | uint8
+| contract_type_two_year | If customer is locked into a 2 year contract | uint8
+| internet_service_type_Fiber Optic | If the customer has Fiber Optic or DSL | uint8 | 0=DSL, 1=Fiber Optic |
+|internet_service_type_None | If the customer has no internet service | uint8 | 0=has internet, 1=has no internet
+
 
 
