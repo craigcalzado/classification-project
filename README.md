@@ -29,8 +29,9 @@
 
 <h2>Data Dictionary</h2>
 
-| --- | --- | --- | --- |
+
 | Attribute | Definition | Data Type | Additional Info |
+| --- | --- | --- | --- |
 | customer_id | Unique customer identification number | object |
 | senior_citizen | If customer is a senior | int64 |
 | partner | If customer has a partner | object |
