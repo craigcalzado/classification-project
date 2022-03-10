@@ -27,6 +27,19 @@
 
 - Utilization of Telco Co. dataset acquired from Codeup SQL database
 
-
+<h2>Data Dictionary</h2>
+| Attribute | Definition | Data Type | Additional Info |
+| customer_id | Unique customer identification number | object |
+| senior_citizen | If customer is a senior | int64 |
+| partner | If customer has a partner | object |
+| dependents | If customer has dependents | object |
+| tenure | How long the customer has been with Telco | int65 |
+| phone_service | If the customer has a phone line with Telco | object |
+| multiple_lines | If customer does have phone service do they have more than one | object |
+| online_security | If the customer has online security with Telco | object |
+| online_backup | If the customer has online backup service with Telco | object |
+| device_protection | If the customer has device protection with Telco | object |
+| tech_support | If the customer has tech support with Teco | object |
+|
 
 
