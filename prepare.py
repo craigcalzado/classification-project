@@ -62,6 +62,7 @@ def prep_telco(df):
     dummy_df = pd.get_dummies(df[['gender', 'payment_type', 'contract_type', 'internet_service_type']], drop_first=True)
     df = pd.concat([df, dummy_df], axis=1)
     df['churn'] = df['churn'].map({'Yes': 1, 'No': 0})
+    df.rename(columns=lambda x: x.replace(' ', '_'), inplace=True)
     return df.drop(columns=['gender', 'payment_type', 'contract_type', 'internet_service_type'])
 
 def split_telco_churn(df):
