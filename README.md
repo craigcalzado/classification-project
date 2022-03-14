@@ -29,7 +29,6 @@
 
 <h2>Data Dictionary</h2>
 
-
 | Attribute | Definition | Data Type | Additional Info |
 | --- | --- | --- | --- |
 | customer_id | Unique customer identification number | object |
@@ -57,6 +56,105 @@
 | contract_type_two_year | If customer is locked into a 2 year contract | uint8
 | internet_service_type_Fiber Optic | If the customer has Fiber Optic or DSL | uint8 | 0=DSL, 1=Fiber Optic |
 |internet_service_type_None | If the customer has no internet service | uint8 | 0=has internet, 1=has no internet
+
+<h2>Hypotheses</h2>
+
+- Alpha = .05 (95% confidence level)
+
+<h2>Hypo #1 Fiber vs. Churn</h2>
+
+-  $H_0:$ There is no correlation between Fiber internet service and customer churn.
+-  $H_a:$ There is a correlation between Fiber internet service type and customer churn.
+
+<h2>Hypo #2 Electronic Checks vs. Churn</h2>
+
+-  $H_0:$ There is no correlation between  Electronic checks and customer churn.
+-  $H_a:$ There is a correlation between Electronic checks type and customer churn.
+
+<h2>Hypo #3 Monthly Contracts vs. Churn</h2>
+
+-  $H_0:$ There is no correlation between  Monthly Contracts and customer churn.
+-  $H_a:$ There is a correlation between Monthly contracts and customer churn.
+
+<h2>Hypo #2 Tenure vs. Churn</h2>
+
+-  $H_0:$ There is no correlation between  tenure and customer churn.
+-  $H_a:$ There is a correlation between tenure and customer churn. 
+
+<h2>Executive Summary/Conclusion and Recommendations</h2>
+
+Discovery:
+
+- There were four driver of churn internet service(Fiber), Payment(Electronic Check), Month to month contracts, and Tenure.
+- Analysis showed that customers under a year of tenure were the most likley to churn.
+- The Classification model predited the churn of customers at a 78% accuracy.
+
+Reccomendations:
+
+- Offer incintves to move customers from month to month to a 1 or 2 year contract.
+- Offer incintive to setup autopay.
+- Target customer who have a tenure less then 12 months.
+- Create surveys to check the integrety of the Fiber optic internet service.
+- For customers on Fiber offer DSL until Fiber is stable.
+
+<h2>Data Science Pipeline</h2>
+
+<h2>Plan, Acquire, Prepare, Explore, Model, and Deliver</h2>
+
+<h2>Plan</h2>
+
+- Created documentation(README.md) with objuctives, data dictionary, buisness goals, and hypothesis
+- Located data for exploration aswell as created functions to automate data prep. Functions located in 'acquire.py' and 'prepare.py'
+- Create an outline of how to move forward through the pipeline.
+
+<h2>Acquire</h2>
+
+- Accessed Data by utilizing acquire.py to pull the data from SQL database.
+- Initilized data summarization with .info(), .describe(), .value_counts()
+
+<h2>Prepare</h2>
+
+- Utilized stored functions within prepare.py 
+- Cleaned data by creating useful columns and dropping not so useful columns.
+- Split cleaned data into train, validate and test data sets.
+
+<h2>Explore</h2>
+
+- Answered key questions and figured out which features were the true drivers of churn.
+- Created two statistical tests that measured the the relationships of churn.
+- Created visulizations of the drivers of churn.
+- Summerized conclustion and began to provide answers to specific questions and identified key take aways.
+
+<h2>Model</h2>
+
+- Created a baseline accuracy to determine if the models i created are useable.
+- Utilized the train data set to fit, transform and evaluate multiple models. Utilizing differnt hyperparameters and algoithums.
+- Compared evaluation metrics though all models and selecting the best for the validatation data set.
+- Based on evalution of the train and validate data i selected the model that moves to testing.
+- Tested final model sumerized performance and document the results,
+
+<h2>Project Reproduction</h2>
+
+- Python
+- SQL
+- numpy
+- sklearn
+- pandas
+- matplotlib
+- seaborn
+- stats
+- acquire.py
+- prepare.py
+- env.py(your credientials)
+- final_report.ipynb
+
+
+
+
+
+
+
+
 
 
 
