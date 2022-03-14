@@ -56,6 +56,8 @@
 | contract_type_two_year | If customer is locked into a 2 year contract | uint8
 | internet_service_type_Fiber Optic | If the customer has Fiber Optic or DSL | uint8 | 0=DSL, 1=Fiber Optic |
 |internet_service_type_None | If the customer has no internet service | uint8 | 0=has internet, 1=has no internet
+| contract_type_monthly | If customer is on a month to month contract | int64 |
+| tenure_years | How many years the customer has been with telco | float|
 
 <h2>Questions:</h2>
 
