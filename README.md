@@ -57,6 +57,15 @@
 | internet_service_type_Fiber Optic | If the customer has Fiber Optic or DSL | uint8 | 0=DSL, 1=Fiber Optic |
 |internet_service_type_None | If the customer has no internet service | uint8 | 0=has internet, 1=has no internet
 
+<h2>Questions:</h2>
+
+- What are the drivers for customer churn?
+- What are the steps that will be taken to predict customer churn?
+- Why are customers churning?
+- Who is the target of churn?
+- How long until the customer churns?
+- How long until churn is addressed?
+
 <h2>Hypotheses</h2>
 
 - Alpha = .05 (95% confidence level)
